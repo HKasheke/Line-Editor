@@ -4,20 +4,26 @@ Simple line editor like the first editors for files
 Write a simple line editor named ‘edit’. The program is started by entering “edit <filename>” at the
 command prompt, where “edit” (or “edit.exe”) is the name of the compiled executable and
 “<filename>” is the name of either a new file to create or an exis�ng file to edit.
+
 Keep the entire text in a linked list, each line in a separate node.
+
 Starting
 When editing a new file, a prompt simply appears along with a line number, allowing the user to start
 entering text or commands.
 PS> .\edit new_file.txt
 1>
+
 If the file being edited exists and contains text, the contents will be read in and displayed with an
 additional prompt to allow the user to enter more text or commands.
 PS> .\edit existing_file.txt
 1>Once upon a time,
 2>in a land far, far away.
 3>
+
 Commands
+
 Inserting
+
 Inserting text can be as simple as typing at the displayed line prompts. Any text that isn’t a command will
 be entered as text.
 If text is to be inserted at a line other than the current line prompt, you can enter an insert command I.
@@ -33,7 +39,7 @@ line will be moved down one line.
 2>in a land far, far away.
 3>I
 2>a princess lived,
-Data Structures (PROG2400)
+
 Listing
 Once text has been added, you will want to view lines of the document to see the result. The lis�ng
 command is L.
